@@ -6,11 +6,11 @@ let
 in
 stdenv.mkDerivation rec {
   name = "${pname}-${version}";
-  version = "0.26.1";
+  version = "0.27.1";
 
   src = fetchurl {
     url = "mirror://gnome/sources/${pname}/${gnome3.versionBranch version}/${name}.tar.xz";
-    sha256 = "0da587hpiqy8h3pswn1102h4b905x8k6mk3ajpi7kf4kzkvv30ym";
+    sha256 = "1kp9lz7vay1vd03f6yj5fh80jkn6r9xdzq62s2va0g6hd0pgbnip";
   };
 
   outputs = [ "out" "lib" "dev" ];
